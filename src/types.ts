@@ -2,7 +2,7 @@ type ParentType = 'To-do' | 'In-progress' | 'Done';
 
 type Column = {
   id: ParentType;
-  task: Task[];
+  tasks: Task[];
 };
 
 type Task = {
