@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 interface AddModalStore {
-  isAddModelOpen: false;
+  isAddModelOpen: boolean;
   addModalOpen: () => void;
   addModalClose: () => void;
   modalCategoryTitle: ParentType;
