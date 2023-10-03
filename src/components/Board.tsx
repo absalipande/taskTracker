@@ -2,7 +2,7 @@ import Column from "./Column";
 
 const Board = () => {
     return ( 
-        <Column />
+        <Column id={'To-do'} tasks={[]} index={0}/>
      );
 }
  
