@@ -1,7 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { v4 as uuidv4 } from 'uuid';
-import { title } from 'process';
 
 interface BoardStore {
   board: {
@@ -41,6 +40,15 @@ export const useBoardStore = create<BoardStore>()(
           };
 
           const columnIndex = newColumns.findIndex((column) => column.id === columnId);
+          if (columnIndex !== -1) {
+            newColumns[columnIndex].tasks.push(newTask);
+          }
+
+          return {
+            board: {
+              columns: newColumns,
+            },
+          };
         });
       },
     }),
