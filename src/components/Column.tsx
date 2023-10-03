@@ -11,7 +11,7 @@ const Column = ({ id, tasks, index }: ColumnProps) => {
 
   return (
     <div className='-mt-20'>
-      <div className={`pb-7 p-2 rounded-md shadow-sm ${isDark ? 'bg-[#2d3748]/40' : 'bg-[#718096]'}`}>
+      <div className={`pb-7 p-2 rounded-md shadow-sm ${isDark ? 'bg-[#2d3748]/40' : 'bg-[#718096]/20'}`}>
         <h2 className={` ${isDark ? 'text-white' : 'text-black'} flex mt-2 lg:ml-3 sm:ml-6 ml-4 justify-between text-[17px] font-semibold`}>
           {id}
           <p className={`${isDark ? 'text-white' : 'text-black'} lg:mr-2 mr-3 sm:mr-5 bg-slate-600/40 rounded-full w-6 h-6 lg:pt-[2px] pt-[2px] pr-[1px] text-sm text-center`}>
