@@ -1,4 +1,5 @@
 import useDarkModeStore from '../store/DarkModeStore';
+import TaskCard from './TaskCard';
 
 type ColumnProps = {
   id: ParentType;
@@ -21,7 +22,7 @@ const Column = ({ id, tasks, index }: ColumnProps) => {
         <div className='space-y-2'>
           {tasks.map((task, index) => (
             <div key={task.$id} className={`p-2 ${isDark ? 'bg-[#2E3033]' : 'bg-slate-800/20'} rounded-md`}>
-              {/* TO-DO */}
+              <TaskCard />
             </div>
           ))}
         </div>
